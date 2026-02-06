@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "generated_at": "2025-01-15T10:30:00Z",
+  "devices": [
+    {
+      "id": "dev-001",
+      "hostname": "dev-macbook-pro",
+      "platform": "macos",
+      "os_version": "14.2",
+      "user": "alice",
+      "department": "Engineering",
+      "claude_code": {
+        "installed": true,
+        "version": "1.0.12",
+        "path": "/usr/local/bin/claude",
+        "config_dir": "/Users/alice/.claude",
+        "auto_approve": ["Bash", "Read", "Write"],
+        "last_used": "2025-01-15T09:45:00Z"
+      },
+      "cursor": {
+        "installed": true,
+        "version": "0.42.3",
+        "app_path": "/Applications/Cursor.app",
+        "config_dir": "/Users/alice/Library/Application Support/Cursor",
+        "mcp_enabled": true,
+        "mcp_servers": ["filesystem", "github", "slack"]
+      },
+      "protection": {
+        "aicode_guard_installed": false,
+        "protected": false,
+        "enforce_mode": false
+      }
+    },
+    {
+      "id": "dev-002",
+      "hostname": "eng-ubuntu-ws",
+      "platform": "linux",
+      "os_version": "Ubuntu 22.04",
+      "user": "bob",
+      "department": "Engineering",
+      "claude_code": {
+        "installed": true,
+        "version": "1.0.10",
+        "path": "/usr/bin/claude",
+        "config_dir": "/home/bob/.claude",
+        "auto_approve": [],
+        "last_used": "2025-01-15T08:30:00Z"
+      },
+      "cursor": {
+        "installed": false
+      },
+      "protection": {
+        "aicode_guard_installed": true,
+        "protected": true,
+        "enforce_mode": false,
+        "wrappers": ["find", "sh", "bash", "python", "node"]
+      }
+    },
+    {
+      "id": "dev-003",
+      "hostname": "sec-analyst-mac",
+      "platform": "macos",
+      "os_version": "14.1",
+      "user": "charlie",
+      "department": "Security",
+      "claude_code": {
+        "installed": true,
+        "version": "1.0.12",
+        "path": "/opt/homebrew/bin/claude",
+        "config_dir": "/Users/charlie/.claude",
+        "auto_approve": ["Bash", "Read", "Write", "Edit"],
+        "last_used": "2025-01-15T10:15:00Z"
+      },
+      "cursor": {
+        "installed": true,
+        "version": "0.42.3",
+        "app_path": "/Applications/Cursor.app",
+        "config_dir": "/Users/charlie/Library/Application Support/Cursor",
+        "mcp_enabled": false,
+        "mcp_servers": []
+      },
+      "protection": {
+        "aicode_guard_installed": true,
+        "protected": true,
+        "enforce_mode": true,
+        "wrappers": ["find", "sh", "bash", "zsh", "python", "python3", "node", "tar"]
+      }
+    },
+    {
+      "id": "dev-004",
+      "hostname": "qa-linux-01",
+      "platform": "linux",
+      "os_version": "Debian 12",
+      "user": "diana",
+      "department": "QA",
+      "claude_code": {
+        "installed": true,
+        "version": "1.0.8",
+        "path": "/usr/local/bin/claude",
+        "config_dir": "/home/diana/.claude",
+        "auto_approve": ["Read"],
+        "last_used": "2025-01-14T16:00:00Z"
+      },
+      "cursor": {
+        "installed": false
+      },
+      "protection": {
+        "aicode_guard_installed": false,
+        "protected": false,
+        "enforce_mode": false
+      }
+    }
+  ],
+  "summary": {
+    "total_devices": 4,
+    "claude_code_installed": 4,
+    "cursor_installed": 2,
+    "protected": 2,
+    "enforcing": 1,
+    "unprotected": 2
+  }
+}
